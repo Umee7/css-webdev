@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            color: #fff;
+            padding: 0 150px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-container{
+            width: 280px;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 1px solid #e0e0e0;
+        }   
+
+        .navbar ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            font-size: larger;
+        }
+
+        .navbar li{
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .navbar a {
+            padding: 6px 12px;
+            background-color: black;
+            border-radius: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(61, 61, 61);
+        }
+
+        .nav-container img{
+            width: 45px;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .primary-btn{
+            border-radius: 22px;
+            width: 75%;
+            padding: 16px 20px;
+
+        }
+
+        .profile-container{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <img src="https://abs.twimg.com/favicons/twitter.3.ico" alt="">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Notifications</a></li>
+                <li><a href="">Messages</a></li>
+                <li><a href="">Grok</a></li>
+                <li><a href="">Bookmarks</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Communities</a></li>
+                <li><a href="">Premium</a></li>
+                <li><a href="">Verified Orgs</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+        </nav>
+        <button class="primary-btn">Post</button>
+        <div class="profile-container">
+            <img src="https://pbs.twimg.com/profile_images/1932284977351393280/h88jwOtA_bigger.jpg" alt="">
+            <div class="profile">
+                <h1>umesh</h1>
+                <p>umesh1559832</p>
+            </div>
+            <a href="">...</a>
+        </div>
+    </div>
+</body>
+</html>
